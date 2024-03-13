@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body{
+    background: rgb(4, 0, 31);
+    color: white;
+    height: 90vh;
+}
+
+.main{
+    
+    height: 100vh;
+    min-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.chatHeader{
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+
+
+.chats{
+    margin: 0 auto 5px;
+    max-width: 80%;
+    padding: 10px;
+    height:73vh;
+
+}
+
+.scroll{
+    position: relative;
+    align-items: center;
+    margin: 0 auto 5px;
+    min-width:80%;
+    max-width: 80%;
+    padding: 10px;
+    height:73vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    .chat{
+        margin: .5rem;
+        min-width: 95%;
+        max-width: 95%;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: flex-start;
+        text-align: justify;
+
+        .chatimg{
+            object-fit: cover;
+            width: 2.5rem;
+            margin-right: 2rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .bot{
+        background: rgb(28,30 ,58,1);
+        border-radius: 8px;
+        width: fit-content;
+    }
+}
+
+.chatFooter{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .inp{
+        padding: 1rem;
+        background: rgb(28,30 ,58,1);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 75%;
+    
+        input{
+            width: 93%;
+            outline: none;
+            margin-right: 20px;
+            color: white;
+            
+        }
+    
+        input, button{
+            background: transparent;
+            border: none;
+            
+        }
+    
+        .sendIcon{
+            background:rgb(28,30 ,58,1) ;
+            color: azure;
+            font-size: 20px;
+        }
+    }
+    
+    
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #f5f7f6;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+  }
+  @keyframes l27 {
+    100% {transform: rotate(1turn)}
+  }
+
+@media (max-width : 995px){
+
+
+}
+
+
+
