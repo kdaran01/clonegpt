@@ -8,7 +8,6 @@ import { Enter } from './Enter';
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Main = () => {
-    console.log(import.meta.env.VITE_API_KEY)
 
     const endMsg = useRef(null);
 
