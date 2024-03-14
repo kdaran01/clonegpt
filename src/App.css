@@ -8,14 +8,16 @@
 }
 
 body{
-    background: rgb(4, 0, 31);
-    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/back2.png');
+    background-position:  center;
+    background-size: cover;
+    color: #fff;
     height: 90vh;
 }
 
 .main{
     
-    height: 100vh;
+    height: 95vh;
     min-width: 80vw;
     display: flex;
     flex-direction: column;
@@ -24,17 +26,25 @@ body{
 }
 .chatHeader{
     margin: 5px;
-    padding: 5px;
-    
+    padding: 5px;   
+    .title{
+        margin-left: 10px;
+    }
+}
+
+.subtitle{
+    margin-right: 1.2 rem;
 }
 
 
 
 .chats{
-    margin: 0 auto 5px;
-    max-width: 80%;
+    margin: 0 5px;
     padding: 10px;
     height:73vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 
 }
 
@@ -42,8 +52,9 @@ body{
     position: relative;
     align-items: center;
     margin: 0 auto 5px;
-    min-width:80%;
-    max-width: 80%;
+    /* min-width:80%;
+    max-width: 80%; */
+    width: 80%;
     padding: 10px;
     height:73vh;
     overflow: hidden;
@@ -51,32 +62,55 @@ body{
     scroll-behavior: smooth;
     scrollbar-width: none;
 
-    .chat{
-        margin: .5rem;
-        min-width: 95%;
-        max-width: 95%;
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        display: flex;
-        align-items: flex-start;
-        text-align: justify;
 
-        .chatimg{
-            object-fit: cover;
-            width: 2.5rem;
-            margin-right: 2rem;
-            border-radius: 1rem;
-        }
-    }
+}
+.chat{
+    
+    margin: .5rem;
+    width: 95%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #Dbe4e3;
 
-    .bot{
-        background: rgb(28,30 ,58,1);
-        border-radius: 8px;
-        width: fit-content;
+    .chatimg{
+        object-fit: cover;
+        width: 2.5rem;
+        margin-right: 2rem;
+        border-radius: 1rem;
     }
 }
 
+.bot{
+    font-weight: 400;
+    background: #0e1518;
+    border-radius: 8px;
+    width: fit-content;
+    color: #dbe4e3;
+}
+
+.human{
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .chatimg{
+        order: 1;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+}
+
+.default{
+    width: 50%;
+}
+
 .chatFooter{
+
     padding: 10px;
     width: 100%;
     display: flex;
@@ -86,7 +120,7 @@ body{
 
     .inp{
         padding: 1rem;
-        background: rgb(28,30 ,58,1);
+        background: #0e1518;
         display: flex;
         align-items: center;
         border-radius: 10px;
@@ -107,8 +141,7 @@ body{
         }
     
         .sendIcon{
-            background:rgb(28,30 ,58,1) ;
-            color: azure;
+            color: #DEF2F1;
             font-size: 20px;
         }
     }
@@ -122,7 +155,7 @@ body{
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    color: #f5f7f6;
+    color: #DEF2F1;
     box-shadow: 
       calc(1*var(--d))      calc(0*var(--d))     0 0,
       calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
@@ -133,17 +166,13 @@ body{
       calc(0*var(--d))      calc(-1*var(--d))    0 6px;
     animation: l27 1s infinite steps(8);
     position: absolute;
-    bottom: 10%;
+    bottom: 40%;
     left: 50%;
   }
   @keyframes l27 {
     100% {transform: rotate(1turn)}
   }
 
-@media (max-width : 995px){
-
-
-}
 
 
 
