@@ -173,13 +173,9 @@ body{
     100% {transform: rotate(1turn)}
   }
 
-  @media screen and (max-width : 790px){
-    .default{
-        width: 95%;
-    }
+  
 
     
-  }
   @media screen and (max-width : 790px){
     .default{
         width: 95%;
@@ -188,8 +184,17 @@ body{
         justify-content: space-around;
         
     }
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/back.png');
+        background-position:  center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 
-    
+    .chats{
+        height: 60vh;
+    }
   }
 
 
