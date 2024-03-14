@@ -96,7 +96,7 @@ const Main = () => {
                         loading === true ? <div className="loader"></div> :
                             <div className="chat bot default">
                                 <img src={bot} alt="" className="chatimg" />
-                                <h3 className='subtitle'>Hello, I am a language model AI assistant designed to help with a variety of tasks and provide information on a wide range of topics. I am here to assist you in any way I can, so please feel free to ask me any questions or give me any tasks you need help with.</h3>
+                                <h3 className='subtitle'>Hello, I am an AI assistant designed to help with a variety of tasks and provide information on a wide range of topics. I am here to assist you in any way I can, so please feel free to ask me any questions or give me any tasks you need help with.</h3>
                             </div>
                     }
                 </div>
